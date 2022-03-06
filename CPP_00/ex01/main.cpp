@@ -1,5 +1,5 @@
 // #include <iostream>
-#include "phonebook.hpp"
+#include "PhoneBook.hpp"
 // #include "contact.hpp"
 
 int main(int argc, char **argv)
@@ -24,7 +24,9 @@ int main(int argc, char **argv)
 			if (id == 8)
 				id = 0;
 		}
-		if (str == "EXIT")
+		else if (str == "SEARCH")
+			book.SearchContact();
+		else if (str == "EXIT")
 		{
 			std::cout << "EXIT\n";
 			break;

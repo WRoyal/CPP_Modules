@@ -1,8 +1,8 @@
-NAME		=	PhoneBook
+NAME		=	Account
 
-HEADER		=	PhoneBook.hpp Contact.hpp
+HEADER		=	Account.hpp
 
-SRCS		=	main.cpp PhoneBook.cpp Contact.cpp
+SRCS		=	Account.cpp
 
 OBJS		= 	$(patsubst %.cpp,%.o,$(SRCS))
 # OBJS		=	$(SRCS:.cpp=.o)

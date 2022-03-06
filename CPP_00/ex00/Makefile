@@ -1,6 +1,6 @@
-NAME		=	megaphone
+NAME		=	MegaPhone
 
-SRCS		=	megaphone.cpp
+SRCS		=	MegaPhone.cpp
 
 OBJS		= 	$(patsubst %.cpp,%.o,$(SRCS))
 # OBJS		=	$(SRCS:.cpp=.o)
