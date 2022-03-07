@@ -4,9 +4,10 @@ Contact::Contact(void ) {}
 
 Contact::~Contact(void ) {}
 
-
-void	Contact::CreateContact(void )
+void	Contact::CreateContact(void)
 {
+	int flag = 0;
+
 	std::cout << "FirstName -> ";
 	std::getline(std::cin, this->FirstName);
 	if (std::cin.eof())
@@ -33,20 +34,24 @@ void	Contact::CreateContact(void )
 		std::cout << "Empty DarkestSecret" << std::endl;
 }
 
-bool	Contact::EmptyContact(void)
+int	Contact::EmptyContact(void)
 {
-	bool bol = true;
-	if (!this->FirstName.empty())
-		bol = false;
-	if (!this->LastName.empty())
-		bol = false;
-	if (!this->NickName.empty())
-		bol = false;
-	if (!this->PhoneNumber.empty())
-		bol = false;
-	if (!this->DarkestSecret.empty())
-		bol = false;
-	return bol ? true : false;
+	int	flag = 0;
+
+	if (this->FirstName.empty())
+		flag = 1;
+	if (this->LastName.empty())
+		flag = 1;
+	if (this->NickName.empty())
+		flag = 1;
+	if (this->PhoneNumber.empty())
+		flag = 1;
+	if (this->DarkestSecret.empty())
+		flag = 1;
+	if (flag == 0)
+		return 0;
+	else
+		return 1;
 }
 
 void Contact::PrintContact(int id)

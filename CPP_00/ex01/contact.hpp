@@ -17,7 +17,7 @@ class Contact
 		Contact(void );
 		~Contact(void );
 		void	CreateContact(void );
-		bool	EmptyContact(void);
+		int		EmptyContact(void);
 		void	PrintContact(int id);
 		void	FullContact(void );
 };

@@ -5,7 +5,6 @@ HEADER		=	PhoneBook.hpp Contact.hpp
 SRCS		=	main.cpp PhoneBook.cpp Contact.cpp
 
 OBJS		= 	$(patsubst %.cpp,%.o,$(SRCS))
-# OBJS		=	$(SRCS:.cpp=.o)
 
 CPP			= 	@c++
 
