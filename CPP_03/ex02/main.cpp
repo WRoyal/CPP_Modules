@@ -1,26 +1,31 @@
+#include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 
 int main(void)
 {
-	ClapTrap a("Luke");
+	ScavTrap a("Luke");
 	std::cout << a << "\n";
 
-	ScavTrap b("Yoda");
-	std::cout << "\n";
+	FragTrap b("Yoda");
+	b.highFivesGuys();
+	std::cout << b << "\n";
 
-	ScavTrap c(b);
-	std::cout << c << "\n";
-	std::cout << "\n";
+	b.attack("asda");
+	// std::cout << "\n";
 
-	ScavTrap d("Borya");
-	std::cout << "\n";
+	// ScavTrap c(b);
+	// std::cout << c << "\n";
+	// std::cout << "\n";
 
-	a.attack("Yoda");
-	a.TakeDamage(2);
-	a.beRepaired(12);
-	c.attack("Borya");
-	c.TakeDamage(2);
-	c.beRepaired(12);
+	// ScavTrap d("Borya");
+	// std::cout << "\n";
+// 
+// 	a.attack("Yoda");
+// 	a.TakeDamage(2);
+// 	a.beRepaired(12);
+// 	c.attack("Borya");
+// 	c.TakeDamage(2);
+
 
 	std::cout << "\n";
 	

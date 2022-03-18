@@ -1,8 +1,8 @@
 NAME		=	program
 
-HEADER		=	ClapTrap.hpp ScavTrap.hpp
+HEADER		=	ClapTrap.hpp ScavTrap.hpp FragTrap.hpp
 
-SRCS		=	main.cpp ClapTrap.cpp ScavTrap.cpp
+SRCS		=	main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
 OBJS		= 	$(patsubst %.cpp,%.o,$(SRCS))
 
